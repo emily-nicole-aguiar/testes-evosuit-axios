@@ -1,0 +1,322 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.github.xiao-organization:axios:jar:1.0.0
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-compiler-plugin @ line 147, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] -----------------< io.github.xiao-organization:axios >------------------
+[INFO] Building axios 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ axios ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/emily.aguiar/axios/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.0:compile (default-compile) @ axios ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ axios ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/emily.aguiar/axios/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.0:testCompile (default-testCompile) @ axios ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.1:test (default-test) @ axios ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.axios.cookie.ThreadLocalCookieStore_ESTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 s - in com.axios.cookie.ThreadLocalCookieStore_ESTest
+[INFO] Running com.axios.status.Status_ESTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.axios.status.Status_ESTest
+[INFO] Running com.axios.AxiosTest
+[ERROR] Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 4.446 s <<< FAILURE! - in com.axios.AxiosTest
+[ERROR] test2_Axios(com.axios.AxiosTest)  Time elapsed: 0.014 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test2_Axios(AxiosTest.java:34)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test2_Axios(AxiosTest.java:34)
+
+[ERROR] test7_Axios(com.axios.AxiosTest)  Time elapsed: 0.003 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test7_Axios(AxiosTest.java:82)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test7_Axios(AxiosTest.java:82)
+
+[ERROR] test3_Axios(com.axios.AxiosTest)  Time elapsed: 0.001 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test3_Axios(AxiosTest.java:45)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test3_Axios(AxiosTest.java:45)
+
+[ERROR] test4_Axios(com.axios.AxiosTest)  Time elapsed: 0.001 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test4_Axios(AxiosTest.java:54)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test4_Axios(AxiosTest.java:54)
+
+[ERROR] test5_Axios(com.axios.AxiosTest)  Time elapsed: 1.431 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at com.axios.AxiosTest.test5_Axios(AxiosTest.java:67)
+Caused by: java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at com.axios.AxiosTest.test5_Axios(AxiosTest.java:67)
+
+[ERROR] test1_Axios(com.axios.AxiosTest)  Time elapsed: 2.992 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at com.axios.AxiosTest.test1_Axios(AxiosTest.java:18)
+Caused by: java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at com.axios.AxiosTest.test1_Axios(AxiosTest.java:18)
+
+[ERROR] test6_Axios(com.axios.AxiosTest)  Time elapsed: 0.002 s  <<< ERROR!
+com.axios.exception.IORuntimeException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test6_Axios(AxiosTest.java:74)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at com.axios.AxiosTest.test6_Axios(AxiosTest.java:74)
+
+[INFO] Running com.axios.ajax.Ajax_ESTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s - in com.axios.ajax.Ajax_ESTest
+[INFO] Running com.axios.core.rfc.PercentCodec_ESTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.axios.core.rfc.PercentCodec_ESTest
+[INFO] Running com.axios.core.rfc.RFC3986_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.axios.core.rfc.RFC3986_ESTest
+[INFO] Running com.axios.core.tool.regular.RegularTool_ESTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in com.axios.core.tool.regular.RegularTool_ESTest
+[INFO] Running com.axios.core.tool.ssl.SSLTool_ESTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in com.axios.core.tool.ssl.SSLTool_ESTest
+[INFO] Running com.axios.core.tool.ssl.SSLContextBuilder_ESTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in com.axios.core.tool.ssl.SSLContextBuilder_ESTest
+[INFO] Running com.axios.core.tool.URLEncoder_ESTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.axios.core.tool.URLEncoder_ESTest
+[INFO] Running com.axios.core.tool.file.FileTool_ESTest
+[ERROR] Tests run: 67, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.17 s <<< FAILURE! - in com.axios.core.tool.file.FileTool_ESTest
+[ERROR] test66(com.axios.core.tool.file.FileTool_ESTest)  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.StackOverflowError
+
+[ERROR] test62(com.axios.core.tool.file.FileTool_ESTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.ExceptionInInitializerError
+	at com.axios.core.tool.file.FileTool_ESTest.test62(FileTool_ESTest.java:3119)
+Caused by: java.lang.SecurityException: 
+Security manager blocks ("java.lang.RuntimePermission" "fileTypeDetector")
+java.lang.Thread.getStackTrace(Thread.java:1564)
+org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
+java.nio.file.spi.FileTypeDetector.checkPermission(FileTypeDetector.java:55)
+java.nio.file.spi.FileTypeDetector.<init>(FileTypeDetector.java:68)
+sun.nio.fs.AbstractFileTypeDetector.<init>(AbstractFileTypeDetector.java:41)
+sun.nio.fs.GnomeFileTypeDetector.<init>(GnomeFileTypeDetector.java:50)
+sun.nio.fs.LinuxFileSystemProvider.getFileTypeDetector(LinuxFileSystemProvider.java:109)
+sun.nio.fs.DefaultFileTypeDetector.create(DefaultFileTypeDetector.java:37)
+java.nio.file.Files$FileTypeDetectors$1.run(Files.java:1546)
+java.nio.file.Files$FileTypeDetectors$1.run(Files.java:1544)
+java.security.AccessController.doPrivileged(Native Method)
+java.nio.file.Files$FileTypeDetectors.createDefaultFileTypeDetector(Files.java:1544)
+java.nio.file.Files$FileTypeDetectors.<clinit>(Files.java:1537)
+java.nio.file.Files.probeContentType(Files.java:1617)
+com.axios.core.tool.file.FileTool.getMimeType(FileTool.java:187)
+com.axios.core.tool.file.FileTool.getMimeType(FileTool.java:180)
+com.axios.core.tool.file.FileTool_ESTest.test62(FileTool_ESTest.java:3119)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:288)
+org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:282)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.lang.Thread.run(Thread.java:750)
+
+	at com.axios.core.tool.file.FileTool_ESTest.test62(FileTool_ESTest.java:3119)
+
+[INFO] Running com.axios.core.tool.file.DelVisitor_ESTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.axios.core.tool.file.DelVisitor_ESTest
+[INFO] Running com.axios.core.tool.file.MoveVisitor_ESTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.023 s - in com.axios.core.tool.file.MoveVisitor_ESTest
+[INFO] Running com.axios.core.tool.random.RandomTool_ESTest
+[ERROR] Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in com.axios.core.tool.random.RandomTool_ESTest
+[ERROR] test00(com.axios.core.tool.random.RandomTool_ESTest)  Time elapsed: 0.004 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[6710577377132836170935237290744103500353963738370228403101224882433940014110753982588250720223546988615161543418154632071729338472083095921867438411572445285871179576094557498560056836771769446131032957795430465951324885276677648718274102041011817319212270043595356009944624070173261131687163807773000403545618128205129842784794828348902393368117613375742272564984446940203927248265111451899636839378119430633013406875913255447604048496736408749685665447197800122262910877719414591249624197493189048640164174689395108517594190785925360388054398167078752116344051823210414450315649139376599779615892701025532989122609408748623733915395356887742099494960346774576313063040480204142497114914439341862526870680614732150704550495785078517318085449094504424864931943789558088809134660363427832899301277851246041018374]> but was:<[9745002698596421633554801642558528927729323785548665859060780111648084529112411056889015438208825215520356258919758079738310179232175576021016347126266382379102260391645647939056591179040310285802468422112651065431450114067204253906785546240900919700653757322483474917268649660864334041803620315655767115612513788193686608638350079952367119640694971445741062476301851354531120883025608233694481588230469178512000877869177245294561925689074374419434377279513370636386265800916218101513845293504643360591299137082810093595990091852659698001941179048734949173404992142378027734035556342838390633805703539110677376059736451595651593866209668509793816804889657996220116080436824964471716133551581364444246453702529448111007264312890785968252250814513872694707568592067755847204368930008016203774027266674860029548542]>
+	at com.axios.core.tool.random.RandomTool_ESTest.test00(RandomTool_ESTest.java:29)
+
+[INFO] Running com.axios.core.tool.UrlTool_ESTest
+[INFO] Tests run: 157, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s - in com.axios.core.tool.UrlTool_ESTest
+[INFO] Running com.axios.core.tool.http.HttpTool_ESTest
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in com.axios.core.tool.http.HttpTool_ESTest
+[INFO] Running com.axios.core.tool.mutable.MutableObj_ESTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.axios.core.tool.mutable.MutableObj_ESTest
+[INFO] Running com.axios.core.tool.text.ArrayIter_ESTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.axios.core.tool.text.ArrayIter_ESTest
+[INFO] Running com.axios.core.tool.text.IterableIter_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.axios.core.tool.text.IterableIter_ESTest
+[INFO] Running com.axios.core.tool.text.StrJoiner_ESTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.axios.core.tool.text.StrJoiner_ESTest
+[INFO] Running com.axios.core.tool.io.FastByteBuffer_ESTest
+[INFO] Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in com.axios.core.tool.io.FastByteBuffer_ESTest
+[INFO] Running com.axios.core.tool.io.IoTool_ESTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in com.axios.core.tool.io.IoTool_ESTest
+[INFO] Running com.axios.core.tool.io.StreamCopier_ESTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.axios.core.tool.io.StreamCopier_ESTest
+[INFO] Running com.axios.core.tool.io.IoCopier_ESTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.axios.core.tool.io.IoCopier_ESTest
+[INFO] Running com.axios.core.tool.io.FastByteArrayOutputStream_ESTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in com.axios.core.tool.io.FastByteArrayOutputStream_ESTest
+[INFO] Running com.axios.core.body.MultipartBody_ESTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.axios.core.body.MultipartBody_ESTest
+[INFO] Running com.axios.core.http.url.UrlQuery_ESTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in com.axios.core.http.url.UrlQuery_ESTest
+[INFO] Running com.axios.core.http.url.UrlBuilder_ESTest
+[INFO] Tests run: 100, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in com.axios.core.http.url.UrlBuilder_ESTest
+[INFO] Running com.axios.core.http.url.URLDecoder_ESTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.axios.core.http.url.URLDecoder_ESTest
+[INFO] Running com.axios.core.http.url.FormUrlencoded_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.axios.core.http.url.FormUrlencoded_ESTest
+[INFO] Running com.axios.core.http.url.UrlPath_ESTest
+[ERROR] Tests run: 27, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.075 s <<< FAILURE! - in com.axios.core.http.url.UrlPath_ESTest
+[ERROR] test07(com.axios.core.http.url.UrlPath_ESTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Exception was not thrown in java.nio.Buffer but in java.nio.HeapCharBuffer.get(HeapCharBuffer.java:142): java.lang.IndexOutOfBoundsException: 139
+	at com.axios.core.http.url.UrlPath_ESTest.test07(UrlPath_ESTest.java:110)
+
+[INFO] Running com.axios.core.http.HttpDownloader_ESTest
+[ERROR] Tests run: 26, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! - in com.axios.core.http.HttpDownloader_ESTest
+[ERROR] test00(com.axios.core.http.HttpDownloader_ESTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NumberFormatException: null
+	at com.axios.core.http.HttpDownloader_ESTest.test00(HttpDownloader_ESTest.java:36)
+
+[ERROR] test05(com.axios.core.http.HttpDownloader_ESTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.StackOverflowError
+
+[ERROR] test09(com.axios.core.http.HttpDownloader_ESTest)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.StackOverflowError
+
+[INFO] Running com.axios.core.http.HttpBase_ESTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in com.axios.core.http.HttpBase_ESTest
+[INFO] Running com.axios.core.http.HttpRequest_ESTest
+[WARNING] Tests run: 97, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.171 s - in com.axios.core.http.HttpRequest_ESTest
+[INFO] Running com.axios.core.type.ContentType_ESTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.axios.core.type.ContentType_ESTest
+[INFO] Running com.axios.core.connection.Connection_ESTest
+[INFO] Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in com.axios.core.connection.Connection_ESTest
+[INFO] Running com.axios.core.resource.FileResource_ESTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.axios.core.resource.FileResource_ESTest
+[INFO] Running com.axios.core.resource.BytesResource_ESTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.axios.core.resource.BytesResource_ESTest
+[INFO] Running com.axios.core.resource.MultiFileResource_ESTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.axios.core.resource.MultiFileResource_ESTest
+[INFO] Running com.axios.core.resource.Resource_ESTest
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in com.axios.core.resource.Resource_ESTest
+[INFO] Running com.axios.core.mutable.MutableObj_ESTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.axios.core.mutable.MutableObj_ESTest
+[INFO] Running com.axios.core.manager.DefaultTrustManager_ESTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.axios.core.manager.DefaultTrustManager_ESTest
+[INFO] Running com.axios.core.strem.HttpInputStream_ESTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in com.axios.core.strem.HttpInputStream_ESTest
+[INFO] Running com.axios.core.assertion.Assert_ESTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in com.axios.core.assertion.Assert_ESTest
+[INFO] Running com.axios.core.config.ssl.TrustAnyHostnameVerifier_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.axios.core.config.ssl.TrustAnyHostnameVerifier_ESTest
+[INFO] Running com.axios.core.config.ssl.CustomProtocolsSSLFactory_ESTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.024 s - in com.axios.core.config.ssl.CustomProtocolsSSLFactory_ESTest
+[INFO] Running com.axios.core.config.ssl.AndroidSupportSSLFactory_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.axios.core.config.ssl.AndroidSupportSSLFactory_ESTest
+[INFO] Running com.axios.core.config.ssl.DefaultSSLFactory_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.axios.core.config.ssl.DefaultSSLFactory_ESTest
+[INFO] Running com.axios.core.config.ssl.DefaultSSLInfo_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.axios.core.config.ssl.DefaultSSLInfo_ESTest
+[INFO] Running com.axios.core.config.global.HttpGlobalConfig_ESTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.axios.core.config.global.HttpGlobalConfig_ESTest
+[INFO] Running com.axios.core.config.global.GlobalCookieManager_ESTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in com.axios.core.config.global.GlobalCookieManager_ESTest
+[INFO] Running com.axios.core.config.global.GlobalHeaders_ESTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in com.axios.core.config.global.GlobalHeaders_ESTest
+[INFO] Running com.axios.core.map.CaseInsensitiveMap_ESTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.axios.core.map.CaseInsensitiveMap_ESTest
+[INFO] Running com.axios.core.map.CustomKeyMap_ESTest
+[ERROR] Tests run: 27, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.049 s <<< FAILURE! - in com.axios.core.map.CustomKeyMap_ESTest
+[ERROR] test05(com.axios.core.map.CustomKeyMap_ESTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<java.util.HashMap@0000000006>
+	at com.axios.core.map.CustomKeyMap_ESTest.test05(CustomKeyMap_ESTest.java:159)
+
+[ERROR] test08(com.axios.core.map.CustomKeyMap_ESTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.axios.core.map.CustomKeyMap_ESTest.test08(CustomKeyMap_ESTest.java:209)
+
+[INFO] Running com.axios.core.map.MapWrapper_ESTest
+[WARNING] Tests run: 64, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.079 s - in com.axios.core.map.MapWrapper_ESTest
+[INFO] Running com.axios.core.map.TableMap_ESTest
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.axios.core.map.TableMap_ESTest
+[INFO] Running com.axios.response.Response_ESTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.axios.response.Response_ESTest
+[INFO] Running com.axios.response.HttpResponse_ESTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.143 s - in com.axios.response.HttpResponse_ESTest
+[INFO] Running com.axios.request.Body_ESTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.axios.request.Body_ESTest
+[INFO] Running com.axios.request.Request_ESTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.axios.request.Request_ESTest
+[INFO] Running com.axios.exception.IORuntimeException_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.axios.exception.IORuntimeException_ESTest
+[INFO] Running com.axios.exception.ConnException_ESTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.axios.exception.ConnException_ESTest
+[INFO] Running com.axios.exception.NoResourceException_ESTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.axios.exception.NoResourceException_ESTest
+[INFO] Running com.axios.exception.HttpException_ESTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.axios.exception.HttpException_ESTest
+[INFO] Running com.axios.Conn_ESTest
+[INFO] Tests run: 164, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 s - in com.axios.Conn_ESTest
+[INFO] Running com.axios.Axios_ESTest
+[INFO] Tests run: 109, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in com.axios.Axios_ESTest
+[INFO] Running com.axios.header.Header_ESTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.axios.header.Header_ESTest
+[INFO] Running com.axios.header.RequestHeader_ESTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.axios.header.RequestHeader_ESTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   UrlPath_ESTest.test07:110 Exception was not thrown in java.nio.Buffer but in java.nio.HeapCharBuffer.get(HeapCharBuffer.java:142): java.lang.IndexOutOfBoundsException: 139
+[ERROR]   CustomKeyMap_ESTest.test05:159 expected null, but was:<java.util.HashMap@0000000006>
+[ERROR]   CustomKeyMap_ESTest.test08:209
+[ERROR]   RandomTool_ESTest.test00:29 expected:<[6710577377132836170935237290744103500353963738370228403101224882433940014110753982588250720223546988615161543418154632071729338472083095921867438411572445285871179576094557498560056836771769446131032957795430465951324885276677648718274102041011817319212270043595356009944624070173261131687163807773000403545618128205129842784794828348902393368117613375742272564984446940203927248265111451899636839378119430633013406875913255447604048496736408749685665447197800122262910877719414591249624197493189048640164174689395108517594190785925360388054398167078752116344051823210414450315649139376599779615892701025532989122609408748623733915395356887742099494960346774576313063040480204142497114914439341862526870680614732150704550495785078517318085449094504424864931943789558088809134660363427832899301277851246041018374]> but was:<[9745002698596421633554801642558528927729323785548665859060780111648084529112411056889015438208825215520356258919758079738310179232175576021016347126266382379102260391645647939056591179040310285802468422112651065431450114067204253906785546240900919700653757322483474917268649660864334041803620315655767115612513788193686608638350079952367119640694971445741062476301851354531120883025608233694481588230469178512000877869177245294561925689074374419434377279513370636386265800916218101513845293504643360591299137082810093595990091852659698001941179048734949173404992142378027734035556342838390633805703539110677376059736451595651593866209668509793816804889657996220116080436824964471716133551581364444246453702529448111007264312890785968252250814513872694707568592067755847204368930008016203774027266674860029548542]>
+[ERROR] Errors: 
+[ERROR]   AxiosTest.test1_Axios:18 » IORuntime java.net.NoRouteToHostException: No route...
+[ERROR]   AxiosTest.test2_Axios:34 » IORuntime java.net.ConnectException: Connection ref...
+[ERROR]   AxiosTest.test3_Axios:45 » IORuntime java.net.ConnectException: Connection ref...
+[ERROR]   AxiosTest.test4_Axios:54 » IORuntime java.net.ConnectException: Connection ref...
+[ERROR]   AxiosTest.test5_Axios:67 » IORuntime java.net.NoRouteToHostException: No route...
+[ERROR]   AxiosTest.test6_Axios:74 » IORuntime java.net.ConnectException: Connection ref...
+[ERROR]   AxiosTest.test7_Axios:82 » IORuntime java.net.ConnectException: Connection ref...
+[ERROR]   HttpDownloader_ESTest.test00:36 » NumberFormat null
+[ERROR]   HttpDownloader_ESTest.test05 » StackOverflow
+[ERROR]   HttpDownloader_ESTest.test09 » StackOverflow
+[ERROR]   FileTool_ESTest.test62:3119 » ExceptionInInitializer
+[ERROR]   FileTool_ESTest.test66 » StackOverflow
+[INFO] 
+[ERROR] Tests run: 1692, Failures: 4, Errors: 12, Skipped: 2
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21.493 s
+[INFO] Finished at: 2024-04-04T22:49:34-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project axios: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/emily.aguiar/axios/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
